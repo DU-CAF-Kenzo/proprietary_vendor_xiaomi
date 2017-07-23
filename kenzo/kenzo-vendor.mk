@@ -95,6 +95,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/kenzo/proprietary/lib64/libfpservice.so:system/lib64/libfpservice.so \
     vendor/xiaomi/kenzo/proprietary/vendor/Diag.cfg:system/vendor/Diag.cfg \
     vendor/xiaomi/kenzo/proprietary/vendor/bin/qti:system/vendor/bin/qti \
+    vendor/xiaomi/kenzo/proprietary/vendor/etc/public.libraries.txt:system/vendor/etc/public.libraries.txt \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libFaceGrade.so:system/vendor/lib/libFaceGrade.so \
     vendor/xiaomi/kenzo/proprietary/vendor/lib/libFaceProc.so:system/vendor/lib/libFaceProc.so \
@@ -577,3 +578,9 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     qcnvitems \
     qcrilhook
+
+# Perf
+PRODUCT_PACKAGES += \
+    com.qualcomm.qti.Performance.xml \
+    libqti_performance \
+    QPerformance
